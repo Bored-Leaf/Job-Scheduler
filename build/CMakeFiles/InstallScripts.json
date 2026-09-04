@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/bored-leaf/Projects/JobScheduler/build/cmake_install.cmake",
-		"/home/bored-leaf/Projects/JobScheduler/build/tests/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

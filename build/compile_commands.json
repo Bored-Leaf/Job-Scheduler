@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/bored-leaf/Projects/JobScheduler/build/tests",
-  "command": "/usr/bin/c++   -g -std=c++23 -stdlib=libc++ -o CMakeFiles/Job_Scheduler_Tests.dir/main.cpp.o -c /home/bored-leaf/Projects/JobScheduler/tests/main.cpp",
-  "file": "/home/bored-leaf/Projects/JobScheduler/tests/main.cpp",
-  "output": "tests/CMakeFiles/Job_Scheduler_Tests.dir/main.cpp.o"
-}
-]
