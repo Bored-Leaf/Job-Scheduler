@@ -8,11 +8,11 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 file(GLOB SOURCE_FILES "src/*.cpp")
 
-add_library(Job_Scheduler STATIC ${SOURCE_FILES})
+add_library(job_scheduler STATIC ${SOURCE_FILES})
 
-target_include_directories(Job_Scheduler
+target_include_directories(job_scheduler
     PUBLIC
-    ${CMAKE_SOURCE_DIR}/include
+    include
 )
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/tests)
+add_subdirectory(tests)

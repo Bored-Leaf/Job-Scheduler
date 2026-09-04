@@ -1,9 +1,9 @@
 
-add_executable(Job_Scheduler_Tests main.cpp)
+add_executable(job_scheduler_tests main.cpp)
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
-    target_compile_options(Job_Scheduler_Tests PRIVATE -stdlib=libc++)
-    target_link_options(Job_Scheduler_Tests PRIVATE -stdlib=libc++ -lc++abi)
+    target_compile_options(job_scheduler_tests PRIVATE -stdlib=libc++)
+    target_link_options(job_scheduler_tests PRIVATE -stdlib=libc++ -lc++abi)
 endif()
 
-target_link_libraries(Job_Scheduler_Tests PRIVATE Job_Scheduler)
+target_link_libraries(job_scheduler_tests PRIVATE job_scheduler)
