@@ -15,4 +15,6 @@ target_include_directories(job_scheduler
     include
 )
 
+set_target_properties(job_scheduler PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
 add_subdirectory(tests)
