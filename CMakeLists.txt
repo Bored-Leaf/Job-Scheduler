@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-file(GLOB SOURCE_FILES "src/*.cpp")
+file(GLOB source_files "src/*.cpp")
 
-add_library(job_scheduler STATIC ${SOURCE_FILES})
+add_library(job_scheduler STATIC ${source_files})
 
 target_include_directories(job_scheduler
     PUBLIC
@@ -16,5 +16,6 @@ target_include_directories(job_scheduler
 )
 
 set_target_properties(job_scheduler PROPERTIES POSITION_INDEPENDENT_CODE ON)
+target_compile_features(job_scheduler PUBLIC cxx_std_23)
 
 add_subdirectory(tests)
