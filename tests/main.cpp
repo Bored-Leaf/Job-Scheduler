@@ -3,5 +3,5 @@
 #include "job_scheduler.hpp"
 
 int main(){
-    job_scheduler::sayHello();
+    
 }
