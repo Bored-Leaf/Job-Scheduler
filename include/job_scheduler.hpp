@@ -59,7 +59,7 @@ namespace job_scheduler {
         * @param job The callback of work.
         * @return The JobHandle of the created Job.
         */
-        JobHandle submit(std::function<void()>& work);
+        JobHandle submit(std::function<void()> work);
 
         /**
          * @brief No-op function, returns immediately.
