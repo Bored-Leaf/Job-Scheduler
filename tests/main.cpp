@@ -7,6 +7,7 @@ void print() {
     std::println("Test 1 >> function pointer");
 }
 
+// TODO: More robust tests with google tests
 int main(){
     job_scheduler::JobScheduler jobScheduler{};
     

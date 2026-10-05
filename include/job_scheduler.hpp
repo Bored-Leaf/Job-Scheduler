@@ -1,6 +1,5 @@
 #include <functional>
 
-// TODO: doxygen Don't forget to document thread safety stuff
 /**
  * @brief Provides a job scheduler skeleton
  *
@@ -28,7 +27,6 @@ namespace job_scheduler {
     };
 
     /**
-    * @internal
     * @brief Represents public accessable metadata about a job.
     *
     * @note Has no way to connect to specific @ref Job in its current implementation.
