@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10.0)
+cmake_minimum_required(VERSION 3.21.0)
 project(JobScheduler VERSION 0.1.0 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 23)
@@ -18,4 +18,7 @@ target_include_directories(job_scheduler
 set_target_properties(job_scheduler PROPERTIES POSITION_INDEPENDENT_CODE ON)
 target_compile_features(job_scheduler PUBLIC cxx_std_23)
 
-add_subdirectory(tests)
+option(job_scheduler_build_tests "Build Jobscheduler tests" ${PROJECT_IS_TOP_LEVEL})
+if (job_scheduler_build_tests)
+    add_subdirectory(tests)
+endif()
